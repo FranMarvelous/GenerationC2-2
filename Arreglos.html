@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+        <script>
+            //Arreglos
+            //variables con mas variables
+            //varias cajitas dentro de corchetes
+            //contenedor de variables
+            //conjunto de datos agrupados en una variable, como una matriz
+            //estante que se puede utilizar en 2d o 3d
+            //lista de elementos, que puede tener distintos tipos de datos
+            //muchos objetos en una sola caja
+
+            //conjunto de datos, ordenados segun su ingreso, separados por coma
+            //TODOS los arreglos comienzan en la posición cero (0)
+            //arreglo: tamaño predefinido, no puede cambiar
+            //lista: tamaño dinamico
+            var vocales = ["u","i","e","o","a"];
+            //tiene 5 elementos, el utlimo esta en la posicion 4
+            //el primer elemento esta en la posicion 0
+            console.log(vocales);
+            //length -> cantidad de elementos, tamaño del arreglo, longitud.
+            console.log(vocales[1], vocales[3], vocales[4], vocales[2], vocales[0])
+            console.log(vocales[8-4])
+            
+            //Re-escribiendo datos en una posicion especifica
+            vocales [1] = "y";
+            console.log(vocales)
+
+            //push agrega un dato al final
+            vocales.push("i");
+            console.log(vocales);
+
+            //pop elimina el ultimo dato
+            vocales.pop();
+            console.log(vocales)
+
+            var arreglo1 = []; //arreglo vacio
+            //el tamaño es CERO
+            console.log(arreglo1.lenght);
+            arreglo1.push(1);
+            arreglo1.push(8);
+            var ultimo = arreglo1.pop();
+            console.log(ultimo); //8
+
+
+
+
+
+
+
+        </script>
+    
+</body>
+</html>

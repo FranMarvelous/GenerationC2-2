@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad_bucles</title>
+</head>
+<body>
+    <script>
+        console.log("ACTIVIDAD GRUPAL G6");
+    console.log("******************");
+    
+    
+    //Array de 1 a 255
+	
+  var arreglo = []; //definición array vacio.
+    for(let i=1; i<=255; i++){ 
+        arreglo.push(i);
+    }
+    console.log("El array es: ", arreglo);
+    
+	//2. Suma Pares 
+	
+  var arreglo_numeros = []; //definición array vacio.
+  for (let i = 1; i <= 1000; i++) { //para crear array del 1 al 1000
+    arreglo_numeros.push(i);
+    }
+    console.log(arreglo_numeros);
+
+    var suma_pares = 0;
+    var contador = arreglo_numeros.length - 1
+    while (contador >= 0) {
+      if (arreglo_numeros[contador] % 2 === 0) {  //condicion para que solo tome números pares
+            suma_pares = suma_pares + arreglo_numeros[contador];
+        }
+        contador--;
+    }
+    console.log("La suma de los pares es: ", suma_pares)
+
+    //Suma Impares
+	
+        var arreglo_numeros = []; //definición array vacio.
+        for (let i = 1; i <= 5000; i++) { //para crear array del 1 al 5000
+            arreglo_numeros.push(i);
+        }
+        console.log(arreglo_numeros);
+
+        var suma_impares = 0;
+        var contador = arreglo_numeros.length - 1
+        while (contador >= 0) {
+            if (arreglo_numeros[contador] % 2 !== 0) {
+                suma_impares = suma_impares + arreglo_numeros[contador];
+            }
+            contador--;
+        }
+        console.log("La suma de los impares es: ", suma_impares)
+
+        
+        
+	//Itera un array 
+	
+    var arreglo_numeros4 = [1,2];
+	var suma = 0;
+	for (let i = 0; i< arreglo_numeros4.length; i++){
+
+    suma += arreglo_numeros4[i];
+
+}
+console.log("la suma de lo valores del array es: ", suma);
+
+	//Numero mayor	
+    var arr = [10,1,5000,4,50,100];
+    var num_max = 0;
+    for (let i = 0; i < arr.length; i++){
+    if(arr[i]>num_max){
+            num_max = arr[i];
+        }
+    } 
+    console.log("El mayor es: ", num_max)
+
+
+  //Promedio
+    var arreglo_numeros4 = [5,5];
+    var suma = 0;
+	for (let i = 0; i< arreglo_numeros4.length; i++){
+
+    suma += arreglo_numeros4[i];
+    var promedio = suma/arreglo_numeros4.length
+
+}
+console.log("El promedio es: ", promedio);
+
+
+//Array impares
+	var arreglo = []; //definición array vacio.
+    for(let i=1; i<=255; i=i+2){ 
+    arreglo.push(i);
+}
+console.log("El array es: ", arreglo);
+
+
+    
+    
+    </script>
+</body>
+</html>

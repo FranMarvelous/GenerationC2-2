@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles</title>
+</head>
+<body>
+    <script>
+        //bucle FOR
+        for(let i = 0; i < 10;i++){//i=i+1==i++== i+1
+
+                console.log("El valor de i es", i);
+        }
+        // respuesta: el valor de i es 0
+        // respuesta: el valor de i es 1
+        // respuesta: el valor de i es 2
+        //...
+        // respuesta: el valor de i es 9
+
+        var numeros_pares=[2,4,6,8,10];
+        /*
+        numeros_pares [numeros_pares.length-1] ; 
+        numeros_pares [5-1];
+        numeros_pares [4];*/
+
+        var element = 0
+        for (let index = 0; index < numeros_pares.length; index++) {
+            element = numeros_pares[index];
+            console.log("la posicion es", index)
+            console.log("el elemento es", element)
+            console.log("");
+        }
+
+        console.log("element", element);
+
+        //var: para la creación de variables globales
+        //let: para bloques especificos dentro del for
+        //const: tambien para bloques especificos, pero recomendada
+        // para establecer variables constantes.
+
+
+        var suma_pares=0;
+        // variables acumuladoras son
+        //variable = variable + algo
+        for(let i=0; i< numeros_pares.length;i++){
+            suma_pares = suma_pares + numeros_pares[i];
+            //sumas_pares= 0 + numeros_pares [1];
+            //suma_pares= 0 + 2
+            //suma_pares= 2
+        }
+
+        console.log("suma total", suma_pares);
+
+    </script>
+    
+</body>
+</html>

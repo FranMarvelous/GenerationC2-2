@@ -9,11 +9,12 @@
 <body>
     <script>
         //Funciones
+        //Trozo del codigo que aparece solo cuando lo llaman
 
         function ejemplo(){
             console.log("Estoy dentro de la funcion");
         }
-        ejemplo();
+        ejemplo(); //llamado a la funcion
 
         function imprimir(cantidad){
             console.log("Parametro", cantidad);
@@ -23,13 +24,48 @@
 
         var numero_impar =1;
 
-        function imprimirImpart(impar) {
+        function imprimirImpart(impar) {//impar=1
             console.log("Impar", impar);
             console.log("numero_impar", numero_impar);
-            numero_impar=3;
+            numero_impar=3; //sobreescritura
         }
         imprimirImpart(numero_impar);
         console.log("nuevo numero_impar", numero_impar)
+
+        //Retorno
+        function SumaNumeros() {
+            console.log(numero_impar+4); //console.log(3+4)
+            return numero_impar+4; //return 7        
+        }
+        var numeroRetornado = SumaNumeros();
+        //var numeroRetornado = 7;
+        console.log("El numero retornado es: ", numeroRetornado)
+
+
+        function sumaImpar(){
+            return 3+5; //return 8            
+        }
+
+        var impares = sumaImpar();
+        console.log("Suma impares: ", impares) //8
+        console.clear
+
+        function multiplicacion(numero1, numero2){
+            return numero1*numero2;
+        }
+
+        var resultadoMultiplicacion=multiplicacion(34,76);
+        console.log("El resultado de la multiplicacion es:", resultadoMultiplicacion)
+        console.clear();
+        
+        function crearNuevoArreglo(numero){
+            var arreglo = [];
+            for (let i = 0 ; i <= numero; i++){
+                arreglo.push(i)               
+            }
+            return arreglo;
+        }
+    console.log("Mi arreglo es:" + arreglo)
 
 
     </script>

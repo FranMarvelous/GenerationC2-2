@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones</title>
+</head>
+<body>
+    <script>
+        //Funciones
+
+        function ejemplo(){
+            console.log("Estoy dentro de la funcion");
+        }
+        ejemplo();
+
+        function imprimir(cantidad){
+            console.log("Parametro", cantidad);
+        }
+
+        imprimir(3)
+
+        var numero_impar =1;
+
+        function imprimirImpart(impar) {
+            console.log("Impar", impar);
+            console.log("numero_impar", numero_impar);
+            numero_impar=3;
+        }
+        imprimirImpart(numero_impar);
+        console.log("nuevo numero_impar", numero_impar)
+
+
+    </script>
+    
+</body>
+</html>
